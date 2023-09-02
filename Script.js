@@ -147,7 +147,7 @@ inverted button"><i class="fire icon"></i>V1 (Old Version)</a></div> </div>
 </div><div class="field">
 <label>Speed (ms):</label><div class="ui labeled input"><input type="number" value="${params.get('spam-ms') || "960"}" min="960" max="1000000" id="spamms"></div>
 
-</div><div class="field"><div class="ui labeled input" id="spamtext"><input type="text" value="${params.get('spam-text') || "Ａ Ｓ Ｓ Ａ Ｓ Ｓ Ｉ Ｎ"}" placeholder="Spam text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field"><button class="ui primary compact labeled icon button" id="startspam"><i class="play icon"></i> Start Spam</button></div></div>
+</div><div class="field"><div class="ui labeled input" id="spamtext"><input type="text" value="${params.get('spam-text') || "Archie"}" placeholder="Spam text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field"><button class="ui primary compact labeled icon button" id="startspam"><i class="play icon"></i> Start Spam</button></div></div>
 
 <div class="inline fields"><label>Messaging:</label><div class="field"><div class="ui selection messaging dropdown">
   <input type="hidden" name="gender">
@@ -159,7 +159,7 @@ inverted button"><i class="fire icon"></i>V1 (Old Version)</a></div> </div>
   </div></div>
 </div>
 
-<div class="field"><div class="ui labeled input" id="messagetext"><input type="text" value="${params.get('message-text') || "Ａ Ｓ Ｓ Ａ Ｓ Ｓ Ｉ Ｎ"}" placeholder="Message text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field">
+<div class="field"><div class="ui labeled input" id="messagetext"><input type="text" value="${params.get('message-text') || "Archie"}" placeholder="Message text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field">
 <button class="ui primary button" id="send">Send Message</button></div>
 </div>
 
@@ -1178,7 +1178,7 @@ async function addBot(botAmount) {
           const regex = /\b[aAá]\.?([lLℓᎥiI]\.?){2}[hH𝔥ʜ]*[\W_]*[aAá]\.?([lLℓᏂhH𝔥ʜ]*[\W_]*){1,2}\b|\b(?:[^\w\s]*[aAá][^\w\s]*){2,}|\b[ᴬaAá][ˡlL1Ii][ᴸlL1Ii]?[ᴬaAá][ℍhH](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*|\b[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼áaAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[lLℓIi][^w\s]*[lLℓIi](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[aAá][^\w\s]*[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼aáAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*\b|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|İsa|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|(?:\W*[\/\*\-+.,:;]\W*)*Y(?:\W*[\/\*\-+.,:;]\W*)*a(?:\W*[\/\*\-+.,:;]\W*)*h(?:\W*[\/\*\-+.,:;]\W*)*v(?:\W*[\/\*\-+.,:;]\W*)*e|(?:\W*[\/\*\-+.,:;]\W*)*İ(?:\W*[\/\*\-+.,:;]\W*)*\b/gi;
 
           if (regex.test(username)) {
-            document.querySelector('#botname div input').value = "Ａ Ｓ Ｓ Ａ Ｓ Ｓ Ｉ Ｎ";
+            document.querySelector('#botname div input').value = "Archie";
             username = "";
           }
         }
@@ -1230,8 +1230,8 @@ async function addBot(botAmount) {
       const regex = /\b[aAá]\.?([lLℓᎥiI]\.?){2}[hH𝔥ʜ]*[\W_]*[aAá]\.?([lLℓᏂhH𝔥ʜ]*[\W_]*){1,2}\b|\b(?:[^\w\s]*[aAá][^\w\s]*){2,}|\b[ᴬaAá][ˡlL1Ii][ᴸlL1Ii]?[ᴬaAá][ℍhH](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*|\b[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼áaAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[lLℓIi][^w\s]*[lLℓIi](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[aAá][^\w\s]*[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼aáAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*\b|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|İsa|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|(?:\W*[\/\*\-+.,:;]\W*)*Y(?:\W*[\/\*\-+.,:;]\W*)*a(?:\W*[\/\*\-+.,:;]\W*)*h(?:\W*[\/\*\-+.,:;]\W*)*v(?:\W*[\/\*\-+.,:;]\W*)*e|(?:\W*[\/\*\-+.,:;]\W*)*İ(?:\W*[\/\*\-+.,:;]\W*)*\b/gi;
 
       if (regex.test(name)) {
-        document.querySelector('#botname div input').value = "Ａ Ｓ Ｓ Ａ Ｓ Ｓ Ｉ Ｎ";
-        name = "Ａ Ｓ Ｓ Ａ Ｓ Ｓ Ｉ Ｎ";
+        document.querySelector('#botname div input').value = "Archie";
+        name = "Archie";
       }
       // Rastgele bir pozisyon seçerek '.' karakteri ekleyelim
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
@@ -1311,7 +1311,7 @@ async function addBot(botAmount) {
           socket.players = data[5]; // players'i soket nesnesine kaydet
           socket.isRoom = true;
           socket.send(`42[46,${playerId}]`);
-          if (params.get('private-mode') !== "true") { socket.send(`42[11,"${playerId}","Assassin joined the room"]`); }
+          if (params.get('private-mode') !== "true") { socket.send(`42[11,"${playerId}","Archie ＩＳ ＨＥＲＥ"]`); }
           updateUserList(data[5]);
           iziToast.info({
             position: 'topRight',
@@ -2027,14 +2027,14 @@ function startSpamIntervalId() {
         const regex = /\b[aAá]\.?([lLℓᎥiI]\.?){2}[hH𝔥ʜ]*[\W_]*[aAá]\.?([lLℓᏂhH𝔥ʜ]*[\W_]*){1,2}\b|\b(?:[^\w\s]*[aAá][^\w\s]*){2,}|\b[ᴬaAá][ˡlL1Ii][ᴸlL1Ii]?[ᴬaAá][ℍhH](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*|\b[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼áaAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[lLℓIi][^w\s]*[lLℓIi](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[aAá][^\w\s]*[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼aáAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*\b|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|İsa|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|(?:\W*[\/\*\-+.,:;]\W*)*Y(?:\W*[\/\*\-+.,:;]\W*)*a(?:\W*[\/\*\-+.,:;]\W*)*h(?:\W*[\/\*\-+.,:;]\W*)*v(?:\W*[\/\*\-+.,:;]\W*)*e|(?:\W*[\/\*\-+.,:;]\W*)*İ(?:\W*[\/\*\-+.,:;]\W*)*\b/gi;
 
         if (regex.test(spamtext)) {
-          document.querySelector('#spamtext input').value = "ＴＨＥ Ａ Ｓ Ｓ Ａ Ｓ Ｓ Ｉ Ｎ ＩＳ ＨＥＲＥ";
-          spamtext = "ＴＨＥ Ａ Ｓ Ｓ Ａ Ｓ Ｓ Ｉ Ｎ ＩＳ ＨＥＲＥ";
+          document.querySelector('#spamtext input').value = "Archie ＩＳ ＨＥＲＥ";
+          spamtext = "Archie ＩＳ ＨＥＲＥ";
         }
         const randomIndex = Math.floor(Math.random() * (spamtext.length + 1));
         let modifiedMessage;
 
         if (Math.random() < 0.1) {
-          modifiedMessage = "ＴＨＥ Ａ Ｓ Ｓ Ａ Ｓ Ｓ Ｉ Ｎ ＩＳ ＨＥＲＥ";
+          modifiedMessage = "Archie ＩＳ ＨＥＲＥ";
         } else {
           modifiedMessage = spamtext.slice(0, randomIndex) + '឵' + spamtext.slice(randomIndex);
         }
