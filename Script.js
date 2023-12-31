@@ -1252,7 +1252,7 @@ async function addBot(botAmount) {
         });
       }
     } else {
-      socket = new WebSocket(`wss:${data.split(":")[1]}/socket.io/?EIO=3&transport=websocket`, null);
+      socket = new WebSocket(`wss://server0${s}.gartic.io/socket.io/?EIO=3&transport=websocket`);
     }
 
     socketList.push(socket);
